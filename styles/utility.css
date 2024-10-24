@@ -1,0 +1,62 @@
+/*Esse documento é para criar classes utilitárias, que vão servir para dar espaços, por exemplo*/
+.py-base {
+  padding-block: var(--py-base); /* o padding block é o que define o eixo vertical*/;
+}
+
+.py-lg {
+  padding-block: var(--py-lg);
+}
+
+.py-xl {
+  padding-block: var(--py-xl); 
+}
+
+.px-lg {
+  padding-inline: var(--px-lg); /*Usamos o padding-inline quando aplicamos no eixo horizontal*/
+}
+
+/*O container vai definir onde vai conter o HMTL*/
+.container { 
+  --max-width: 375px; 
+  width: min(var(--max-width), 100% - var(--px-lg) * 2); /*2rem pq tem 32px de espaço no container*/
+  margin-inline: auto;
+}
+
+.desktop-only {
+  display: none; /*Criando uma classe para desaparecer uma sessão quando for vista no celular, como este é um projeto mobile-first, ele não vai aparecer*/
+}
+
+
+.even-columns { /*criando a diferença entre uma columa embaixo da outra no mobile e uma ao lado da outra no desktop*/
+  display: grid;
+  gap: 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.grid {
+  display: grid;
+}
+
+
+/*Esse @media é para definirmos informações para o desktop*/
+@media (width >= 80em) {
+  .container {
+    --max-width: 80rem;
+  }
+
+  .desktop-only {
+    display: initial;
+  }
+
+  .even-columns {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+}
