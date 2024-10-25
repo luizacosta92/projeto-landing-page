@@ -88,6 +88,10 @@ a:hover {
 ul[role="list"] {
   list-style: none;
 }
+img {
+  max-width: 100%;
+  display: inline-block; /*Opção para manter as imagens */
+}
 
 /*Esse @media é para definirmos informações para o desktop*/
 @media (width >= 80em) { /*Se a largura da tela for igual ou maior que 1280px (ou 80em), exibir da seguinte formea)*/
