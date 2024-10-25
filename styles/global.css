@@ -20,7 +20,7 @@
 
 --brand-color-primary: #F7B733;
 --brand-color-secondary: #FC4A1A;
---brand-gradient: linear-gradient (
+--brand-gradient: linear-gradient(
   90deg, 
   #FC4A1A 0%,
   #F7B733 100%);
@@ -76,6 +76,13 @@ h3 {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+a:hover {
+  background: var(--brand-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 ul[role="list"] {
