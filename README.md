@@ -1,4 +1,4 @@
-Projeto Landing Page reponsiva mobile first
+# Projeto Landing Page reponsiva mobile first
 
 Landing page produzida durante a formação FullStack realizada na RocketSeat para exercitar conceitos de responsividade e mobile first.
 
