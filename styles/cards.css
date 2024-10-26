@@ -1,0 +1,10 @@
+.card {
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+
+  & img {
+    margin-bottom: 1rem;
+  }
+}
