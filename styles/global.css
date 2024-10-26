@@ -49,6 +49,7 @@ html {
   line-height: 1.6; /*Com base na multiplicação do LineHeight de 160% do Style Guide*/
   color: var(--text-color-primary);
   overflow-x: hidden; /*Para não haver rolagem na horizontal quando alguma imagem ultrapassar o espaço da tela*/
+  scroll-behavior: smooth;
 }
 
 body {
