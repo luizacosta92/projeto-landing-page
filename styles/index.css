@@ -10,3 +10,4 @@
 @import url(features.css) (width >=80rem); /* dessa maneira, o features só será importado quando for visualizado em desktop*/
 @import url(pricing.css);
 @import url(download.css);
+@import url(footer.css);
